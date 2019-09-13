@@ -250,13 +250,104 @@ body {
 #Contact {
   margin-top: 150px;
   padding: 105px 0 130px;
-  background: linear-gradient(295.44deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+  background: linear-gradient(
+    295.44deg,
+    #000000 3.28%,
+    #002347 68.98%,
+    #002b58 100%
+  );
   text-align: center;
   color: @white;
   .title {
     margin: 0 0 40px;
     span {
       font-weight: bolder;
+    }
+  }
+}
+
+#Feedback {
+  width: 61%;
+  margin: 170px auto;
+
+  .slider {
+    width: 90%;
+    margin: 90px auto 0;
+    background: @main;
+    color: @white;
+    font-style: italic;
+    position: relative;
+    .slider-btn {
+      border-radius: 50%;
+      color: @cta;
+      background: @white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: -25px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      &:first-child {
+        right: unset;
+        left: -25px;
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+      &::after {
+        content: '';
+        background: url('../assets/slider-arrow.svg') no-repeat center;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+      &:hover {
+        background: @light-gray;
+      }
+    }
+    .slides {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 70px;
+        line-height: 27px;
+        .feedback {
+          font-weight: lighter;
+          span {
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+        .author {
+          text-align: right;
+          font-weight: bold;
+          margin-right: 100px;
+        }
+      }
+    }
+  }
+  @media @medium {
+    width: auto;
+    .title {
+      margin-left: 30px;
+    }
+  }
+  @media @tablet {
+    .slider {
+      width: 89%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .slider-btn {
+      display: none;
     }
   }
 }
