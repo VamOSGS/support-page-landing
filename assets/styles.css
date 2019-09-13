@@ -1,0 +1,40 @@
+body {
+  /* background: #85a5d4; */
+  background: url("./design/1.png");
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 4px 7px 38px 0px rgba(0, 0, 0, 0.75);
+  max-width: 70%;
+  margin: 10vh auto;
+  padding: 70px 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.item img {
+  width: 100px;
+}
+.item .title {
+  text-transform: uppercase;
+}
+.item .price {
+  font-size: 72px;
+}
+.price span {
+  font-size: 20px;
+}
+h2 {
+  color: #5572D6;
+}
+p {
+  color: #B7B0AD;
+}
