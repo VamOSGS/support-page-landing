@@ -95,12 +95,14 @@ body {
 }
 
 #Services {
-  margin-top: 100px;
+  width: 61%;
+  margin: 100px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   .title {
+    width: 100%;
     span {
       display: block;
     }
@@ -129,8 +131,12 @@ body {
     }
   }
   @media @medium {
+    width: auto;
     text-align: left;
     align-items: flex-start;
+    .title {
+      width: auto;
+    }
     .title,
     .list {
       margin-left: 30px;
@@ -243,4 +249,14 @@ body {
 
 #Contact {
   margin-top: 150px;
+  padding: 105px 0 130px;
+  background: linear-gradient(295.44deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+  text-align: center;
+  color: @white;
+  .title {
+    margin: 0 0 40px;
+    span {
+      font-weight: bolder;
+    }
+  }
 }
