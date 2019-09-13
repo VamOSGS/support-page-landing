@@ -1,0 +1,60 @@
+@import './colors.less';
+
+button {
+  color: @white;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 8px 30px;
+  border-radius: 25px;
+  outline: none;
+}
+.btn-default {
+  background: @cta;
+  border: none;
+  &:hover {
+    background: @cta-hover;
+  }
+}
+.btn-outline {
+  background: none;
+  border: 1px solid @white;
+  &:hover {
+    color: @cta;
+    background: @white;
+  }
+}
+
+.btn-long {
+  padding: 12px 30px;
+}
+.text-btn {
+  font-size: 18px;
+  background: none;
+  border: none;
+  color: @cta;
+  line-height: 2px;
+  position: relative;
+  &:hover {
+    &:after {
+      background-position-x: 0;
+    }
+  }
+  &:after {
+    content: '';
+    transition: 0.25s;
+    display: inline-block;
+    margin-left: 10px;
+    width: 30px;
+    height: 12px;
+    background: url('../assets/arrow.svg');
+    background-repeat: no-repeat;
+    background-position-x: -18px;
+  }
+}

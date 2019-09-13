@@ -8,6 +8,7 @@
     #002347 68.98%,
     #002b58 100%
   );
+  height: 780px;
 
   @media @medium {
     background: linear-gradient(
@@ -26,6 +27,7 @@
       #002b58 100%,
       #002b58 100%
     );
+    height: 1024px;
   }
   @media @mobile {
     background: linear-gradient(
@@ -34,5 +36,38 @@
       #002347 69.79%,
       #002b58 100%
     );
+    height: 640px;
+  }
+}
+
+.font-sizes {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  @media @medium {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3,
+    h4 {
+      font-size: 18px;
+    }
+  }
+  @media @mobile {
+    h1 {
+      font-size: 32px;
+    }
   }
 }
