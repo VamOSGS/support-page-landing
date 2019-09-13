@@ -106,8 +106,64 @@ body {
     list-style: none;
     padding: 0;
     margin-top: 40px;
+    display: flex;
     li {
+      margin: 0 15px;
+      width: 14vw;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 18px;
+        margin: 45px 0 40px 0;
+      }
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+      }
+      img {
+        width: 120px;
+      }
+    }
+  }
+  @media @medium {
+    text-align: left;
+    align-items: flex-start;
+    .title,
+    .list {
+      margin-left: 30px;
+    }
+    .list {
+      flex-wrap: wrap;
+      li {
+        width: 40vw;
+        margin: 35px 0;
+        &:nth-child(even) {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+  @media @tablet {
+  }
+  @media screen and (max-width: 400px) {
+    .list, .title {
+      margin-left: 15px;
+    }
+    .list {
+      flex-direction: column;
+      justify-content: flex-start;
+      li {
+        margin: 50px 0;
+        width: 90vw;
+        h3 {
+          margin: 20px 0;
+        }
+        &:nth-child(even) {
+          margin: 0;
+        }
+      }
     }
   }
 }
