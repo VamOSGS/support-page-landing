@@ -400,9 +400,14 @@ ul {
       height: 95%;
     }
   }
-  @media only screen and (max-width: 400px) {
-    .slider-btn {
-      display: none;
+  @media only screen and (max-width: 450px) {
+    .slider {
+      .slider-btn {
+        display: none;
+      }
+      .slides {
+        height: 675px;
+      }
     }
   }
 }
@@ -545,6 +550,7 @@ footer {
     }
   }
   @media @tablet {
+    margin: 100px 0;
     nav {
       flex-direction: column;
       height: 550px;
@@ -563,6 +569,7 @@ footer {
     }
   }
   @media screen and (max-width: 652px) {
+    margin: 0;
     nav {
       height: 100%;
       .row {
@@ -607,6 +614,8 @@ footer {
     }
     .info {
       ul {
+        flex-wrap: wrap;
+
         li:first-child,
         li {
           margin: 10px;
