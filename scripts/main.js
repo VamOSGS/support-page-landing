@@ -3,9 +3,12 @@ const dropDownOpener = document.querySelectorAll('.dropDownOpener');
 const menuBtn = document.querySelector('.menu-btn');
 const header = document.querySelector('.header');
 const [prevButton, nextButton] = document.querySelector('.slider').children;
-let slides = document.querySelectorAll('.slides .slide');
-let currentSlide = 0;
+const slides = document.querySelectorAll('.slides .slide');
+const isMobile = /iphone|ipod|android|ie|blackberry|fennec/.test(
+  navigator.userAgent.toLowerCase()
+);
 
+let currentSlide = 0;
 let menu = false;
 
 open.forEach(item => {
@@ -56,3 +59,11 @@ nextButton.onclick = e => {
 prevButton.onclick = e => {
   changeSlide('prev');
 };
+
+
+
+if (isMobile) {
+  setInterval(() => {
+    changeSlide('next');
+  }, 3000);
+}
