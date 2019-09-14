@@ -60,10 +60,64 @@ prevButton.onclick = e => {
   changeSlide('prev');
 };
 
+function detectSwipe(id, f) {
+  let detect = {
+      startX: 0,
+      startY: 0,
+      endX: 0,
+      endY: 0,
+      minX: 30,
+      maxX: 30,
+      minY: 50,
+      maxY: 60
+    },
+    direction = null,
+    element = document.getElementById(id);
 
+  element.addEventListener('touchstart', function(event) {
+    let touch = event.touches[0];
+    detect.startX = touch.screenX;
+    detect.startY = touch.screenY;
+  });
 
+  element.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+    let touch = event.touches[0];
+    detect.endX = touch.screenX;
+    detect.endY = touch.screenY;
+  });
+
+  element.addEventListener('touchend', function(event) {
+    if (
+      Math.abs(detect.endX - detect.startX) > detect.minX &&
+      Math.abs(detect.endY - detect.startY) < detect.maxY
+    ) {
+      direction = detect.endX > detect.startX ? 'right' : 'left';
+    } else if (
+      Math.abs(detect.endY - detect.startY) > detect.minY &&
+      Math.abs(detect.endX - detect.startX) < detect.maxX
+    ) {
+      direction = detect.endY > detect.startY ? 'down' : 'up';
+    }
+
+    if (direction !== null && typeof f === 'function') {
+      f(element, direction);
+    }
+  });
+}
 if (isMobile) {
-  setInterval(() => {
+  const autoPlay = setInterval(() => {
     changeSlide('next');
   }, 3000);
+  const callSlideChanger = (el, dir) => {
+    clearInterval(autoPlay);
+    if (dir === 'left') {
+      changeSlide('next');
+    } else if (dir === 'right') {
+      changeSlide('prev');
+    }
+  };
+  detectSwipe('slider', callSlideChanger);
 }
+
+
