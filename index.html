@@ -5,13 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="/assets/header/joomag-logo.svg" type="image/svg">
+  <link rel="stylesheet" href="./styles/preloader.less">
+  <script src="./scripts/preloader.js"></script>
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/png">
   <title>JOOMAG - Support Page</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.less">
 </head>
 
 <body>
+  <div id="preloader">
+    <div>
+      <span></span>
+    </div>
+  </div>
   <nav class="header">
     <div class="nav-block">
       <svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -290,9 +299,9 @@
       </div>
       <div class="row">
         <ul class="links">
-          <li><a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.649 15.999"
-                enable-background="new 0 0 8.649 15.999" xml:space="preserve">
+          <li><a target="_blank" href="https://www.facebook.com/joomag"><svg version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 8.649 15.999" enable-background="new 0 0 8.649 15.999" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF"
                     d="M8.324,0.003L6.249,0C3.918,0,2.412,1.546,2.412,3.938v1.816H0.326C0.146,5.754,0,5.9,0,6.08v2.63
@@ -302,9 +311,9 @@
                 </g>
               </svg>
             </a></li>
-          <li><a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.698 16"
-                enable-background="new 0 0 19.698 16" xml:space="preserve">
+          <li><a target="_blank" href="https://twitter.com/Joomag"><svg version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 19.698 16" enable-background="new 0 0 19.698 16" xml:space="preserve">
                 <g>
                   <g>
                     <path fill="#FFFFFF" d="M19.698,1.893c-0.725,0.322-1.503,0.539-2.32,0.636c0.834-0.5,1.474-1.293,1.776-2.234
@@ -317,9 +326,9 @@
                   </g>
                 </g>
               </svg></a></li>
-          <li><a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.744 16"
-                enable-background="new 0 0 16.744 16" xml:space="preserve">
+          <li><a target="_blank" href="https://www.linkedin.com/company/joomag"><svg version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16.744 16" enable-background="new 0 0 16.744 16" xml:space="preserve">
                 <g>
                   <path id="LinkedIn" fill="#FFFFFF" d="M16.744,9.81V16h-3.589v-5.776c0-1.451-0.519-2.441-1.818-2.441
                  c-0.992,0-1.582,0.667-1.842,1.313c-0.094,0.23-0.119,0.552-0.119,0.875V16h-3.59c0,0,0.048-9.782,0-10.796h3.59v1.53
@@ -328,9 +337,9 @@
                   M0.214,16h3.589V5.204H0.214V16z" />
                 </g>
               </svg></a></li>
-          <li><a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.749 16"
-                enable-background="new 0 0 22.749 16" xml:space="preserve">
+          <li><a target="_blank" href="https://www.youtube.com/user/joomag "><svg version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 22.749 16" enable-background="new 0 0 22.749 16" xml:space="preserve">
                 <g id="Lozenge">
                   <path fill="#FFFFFF" d="M22.522,3.451c0,0-0.222-1.568-0.905-2.258c-0.865-0.906-1.834-0.91-2.279-0.964C16.155,0,11.38,0,11.38,0
                  h-0.01c0,0-4.775,0-7.958,0.23c-0.446,0.054-1.414,0.057-2.28,0.964C0.45,1.884,0.228,3.451,0.228,3.451S0,5.293,0,7.134V8.86
@@ -340,9 +349,9 @@
                 </g>
               </svg>
             </a></li>
-          <li><a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16"
-                enable-background="new 0 0 16 16" xml:space="preserve">
+          <li><a target="_blank" href="https://www.instagram.com/joomag_inc/"><svg version="1.1" id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
                 <g>
                   <path fill="#FFFFFF" d="M8,0C5.827,0,5.555,0.01,4.702,0.048C3.85,0.087,3.269,0.222,2.76,0.42
                  C2.234,0.625,1.787,0.898,1.342,1.342S0.625,2.234,0.42,2.76C0.222,3.269,0.087,3.85,0.048,4.702C0.01,5.555,0,5.827,0,8
