@@ -2,7 +2,7 @@
 
 ## You can look result without installing dependencies and building
 ### I deployed it to netlify [joomag-support-gegham-samvelyan.netlify.com](https://joomag-support-gegham-samvelyan.netlify.com)
-### or you can look [Result](./Result) folder.
+### or you can open index.html in [build](./build) folder.
 
 
 

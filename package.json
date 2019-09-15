@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html -d build --no-content-hash --no-source-maps  --public-url ./",
     "serve": "parcel serve index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",

@@ -518,9 +518,11 @@ footer {
         cursor: pointer;
         color: @dark-gray;
         transition: 0.2s;
+        &:first-child {
+          font-weight: bold;
+        }
         &:hover {
           color: @cta;
-          font-weight: 700;
           svg {
             path,
             g {
@@ -670,7 +672,6 @@ footer {
       display: flex;
       > li {
         margin: 0 20px;
-
         &:first-child {
           margin-left: 0;
         }
@@ -687,7 +688,7 @@ footer {
           transform: translateY(100px);
           opacity: 0;
           visibility: hidden;
-          transition: 0.1s visibility, 0.4s transform linear, 0.3s opacity;
+          transition: 0.1s visibility, 0.2s transform linear, 0.3s opacity;
           display: flex;
           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
           &.big {
