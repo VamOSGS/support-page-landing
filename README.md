@@ -1,7 +1,9 @@
 # Customer support page
 
-## You can look reslut without installing dependencies and building
-## I deployed it to netlify [joomag-support-gegham-samvelyan.netlify.com](https://joomag-support-gegham-samvelyan.netlify.com)
+## You can look result without installing dependencies and building
+### I deployed it to netlify [joomag-support-gegham-samvelyan.netlify.com](https://joomag-support-gegham-samvelyan.netlify.com)
+### or you can look [Result](./Result) folder.
+
 
 
 ## For runing this project
