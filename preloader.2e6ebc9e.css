@@ -1,0 +1,77 @@
+.cta {
+  color: #2863fd;
+  font-weight: bolder;
+}
+#preloader {
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: opacity 0.3s linear 0s, visibility 0.2s linear 0.3s;
+  background: linear-gradient(295.44deg, #000000 3.28%, #002347 68.98%, #002b58 100%);
+}
+#preloader.closed {
+  opacity: 0;
+  visibility: hidden;
+}
+#preloader div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #fff;
+  border-image: initial;
+  animation: 2s ease 0s infinite normal none running rotAnim;
+}
+#preloader div span {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: 2s ease-in 0s infinite normal none running loaderInner;
+}
+@keyframes rotAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loaderInner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+
+/*# sourceMappingURL=/preloader.2e6ebc9e.css.map */
